@@ -119,7 +119,7 @@
   
 
 .background{
-    background:  rgba(0, 0, 0, 0.6 ) url(./mainimg.jpg)  ;
+    background:  rgba(0, 0, 0, 0.6 ) url(./images/mainimg.jpg)  ;
     
     background-size:cover;
     background-blend-mode: darken ;
