@@ -13,8 +13,13 @@
     align-items: center;
     top:0;
     cursor: pointer;
-}
+    
+    
 
+    
+    
+    
+}
 .nav_head{
     display:flex;
     justify-content: center;
@@ -37,7 +42,10 @@
    
     align-content: center;
     margin-inline-start: auto;
+    
 }
+
+
 
 .nav_list{
     width: 100%;
@@ -46,6 +54,11 @@
     align-items: center;
     justify-content: center;
     
+
+    
+
+    
+
 }
 
 
@@ -84,6 +97,30 @@
 .nav_list li a:hover{
     color: rgba(255, 255, 255, 0.853);
 }
+/* .rightNav{
+    width: 40%;
+    text-align: right;
+    background-color: antiquewhite;
+    padding-top: 2%;
+    padding-right: 2%;
+    color: rgb(0, 0, 0);
+    
+    
+    
+
+
+} */
+
+
+
+
+/* 
+#search{
+    padding: 5px;
+    font-size: large;
+    border: 3px solid black;
+    border-radius: 10px;
+} */
 
 .button {
     background-color:black; 
@@ -107,6 +144,7 @@
     color: white; 
     border: 2px solid white;
     background: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
     
     
     
@@ -119,7 +157,7 @@
   
 
 .background{
-    background:  rgba(0, 0, 0, 0.6 ) url(./images/mainimg.jpg)  ;
+    background:  rgba(0, 0, 0, 0.6 ) url(../images/maining.jpg)  ;
     
     background-size:cover;
     background-blend-mode: darken ;
@@ -133,10 +171,13 @@
     align-items: center;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
     
 }
 .firstsection{
     height: 60vh;
+    
 }
 
 .firsthalf p {
@@ -144,7 +185,9 @@
     display: flex;
     justify-content: center;
     padding-top: 1%;
-        
+    
+    
+    
 }
 .text-big{
     font-size: 65px;
@@ -162,20 +205,23 @@
     background:none;
     color:white;
     transition-duration: 0.4s;
-}
+    
+    
 
+}
 .buttons{
     justify-content: center;
     align-content: center;
     display: flex;
     padding-top: 1vh;
+    
+    
 }
-
 .btn:hover{
     background-color: rgb(101, 43, 226); 
 }
 .secright{
-    padding-left:10%;
+    padding-left:5%;
     padding-bottom: 10%;
 }
 .secright p{
@@ -183,16 +229,38 @@
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 10%;
     padding-top: 2%;
     
     justify-content: center;
     align-items: center;
+    
+    
+    
 }
-.about p{
+/* .sectionsubtag p {
+    padding-top: 10px;
+} */
+.br{
+    padding-top: 12px;
+}
+ /* .sectiontag p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height:60px;
+    
+    
+    
+} 
+  */
+.sectiontag h3{
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-top: 5%;
+    padding-right: 67px;
+    text-decoration: double;
 }
 
 *, :after, :before {
@@ -208,11 +276,20 @@
 .nav_list li .fa{
     margin-right: 8px;
 }
-
 .sub-menu-1{
     display: none;
 }
+.sub-menu-2{
+    display: none;
+}
 .nav_list li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgb(187, 141, 34) ;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.nav_list li:hover .sub-menu-2{
     display: block;
     position: absolute;
     background:rgb(187, 141, 34) ;
@@ -223,8 +300,20 @@
     display: block;
     margin: 10px;
 }
+.nav_list li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+}
 
 .nav_list li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav_list li:hover .sub-menu-2 ul li{
     width: 200px;
     padding: 10px;
     border-bottom: 1px dotted #fff;
@@ -358,92 +447,64 @@ footer .social_icons li a:hover{
     transform: translateY(-10px);
 }
 
-.menu li a{
+ .menu li a{
     font-size: 1.2em;
     color: #fff;
     margin:  0 10px;
     display: inline-block;
     transition: 0.5s;
-    text-decoration: none;
-    
+    text-decoration: none; 
+     
 
 
-}
+} 
 
 .menu li a:hover{
     
     color:rgb(187, 141, 34);
 }
-
-footer{
-    position:relative;
-    width: 100%;
-    background: #000;
-    min-height: 20px;
-    padding: 20px 50px;
-    display:flex;
+.sectionsubtag h3{
+    padding-top: 10px;
     justify-content: center;
+    padding-bottom: 5px;
     align-items: center;
-    flex-direction: column;
-}
-footer .social_icons,
-.menu{
-    position: relative;
     display: flex;
+    padding-right: 67px;
+    
+}
+.sectionsubtag p{
+    padding-top: 10px;
     justify-content: center;
+    padding-bottom: 5px;
     align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+    display: flex;
+    padding-right: 67px;
+    
 }
 
-
-footer .social_icons li,
-.menu li
-{
-    list-style: none;
-
-}
-footer .social_icons li a,
-.menu li a{
-    font-size: 2em;
-    color: #fff;
-    margin:  0 10px;
-    display: inline-block;
-    transition: 0.5s;
-
-
-}
-
-footer .social_icons li a:hover{
-    transform: translateY(-10px);
-}
-
-.menu li a{
-    font-size: 1.2em;
-    color: #fff;
-    margin:  0 10px;
-    display: inline-block;
-    transition: 0.5s;
+.leftsection{
+    padding-left: 2%;
     text-decoration: none;
+    padding-top: 3%;
     
-
-
 }
-.menu li a:hover{
-    
-    color:rgb(187, 141, 34);
-}
-
 .leftsection li {
-    border-bottom: 2px solid burlywood;
+    border: 2px solid burlywood;
     width: 160px;
     height: 50px;
     font-size: 20px;
     text-align: center;
     margin-left: 5px;
-    background : rgba(235, 230, 219,0.7);
+    background : rgba(0, 0, 0,0.3);
     box-sizing: border-box;
+    list-style: none;
+    
+    
     }
+.leftsection ul{
+    padding-top: 20%;
+    padding-left: 30%;
+}    
 
 .leftsection li a{
     color: #000;
@@ -453,3 +514,100 @@ footer .social_icons li a:hover{
 .leftsection ul :hover{
    background-color:rgb(187, 141, 34);
 }
+
+.active ,.leftsection li:hover {
+    background: rgb(187, 141, 34);
+    border-radius: 4px;
+
+}
+
+.leftsection li .fa{
+    margin-right: 6px;
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Create three unequal columns that sits next to each other */
+  .column {
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+  }
+ 
+  
+  /* Middle column */
+  .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding-left:450px;
+    padding-top: 4%;
+    justify-content: center;
+    align-items: center;
+    display: table-column;
+    
+  }
+  .column.side {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding-left:600px;
+    padding-top: 4%;
+    justify-content: center;
+    align-items: center;
+    display: table-column;
+    
+  }
+
+  .button_submit{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 57%;
+    padding-top: 2%;
+    
+    
+  }
+  .button_submit button:hover{
+    background:rgb(187, 141, 34);
+    
+    
+
+  }
+
+.background_h{
+    background: url(../images/lib7.jpg)   ;
+    
+    background-size:cover;
+    background-blend-mode: darken ;
+}
+
+.box-main1{
+    padding-top: 10%;
+
+}
+
+.column.middle form {
+    
+    padding-left:400px;
+    padding-top: 5%;
+    
+  }
+.column.side form {
+    
+    padding-left:400px;
+    padding-top: 5%;
+    
+  }
+.column.middle h1{
+    justify-content: center;
+    align-items: center;
+} 
+.column.side h1{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+} 
