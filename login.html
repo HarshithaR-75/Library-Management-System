@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0px;
+         }
+
+        .bg{
+          /* background-color: #FBAB7E; 
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  */
+/* background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 33%, #f96666 66%, #d6592d 100%); */
+background-color: #FBAB7E;
+background-image: linear-gradient(180deg, #FBAB7E 0%, #eabc46 50%, #ec3232 100%);
+
+
+
+
+
+
+            /* background-image: url("images/loginbg8.jpg"); */
+            height: 100%;
+            width:auto;           
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            /* background-size:cover; */
+    /* background-blend-mode: darken ; */ 
+            }
+
+        .student{
+           background-color: white;
+           width: 320px;
+           height: 350px;
+           position: absolute;
+           top: 27%;
+           left: 25%;
+           border: 2px solid black;
+           border-right: none;
+           box-shadow: 5px 5px;
+               
+           
+         }
+
+                 .student input[type=email] ,input[type=text]{
+                 width: 200px;
+                 padding: 12px 20px 12px 4px;
+                 margin:  10px;
+                 display: inline-block;
+                 border: 1px solid #ccc;
+                 border-radius: 4px;
+                 box-sizing: border-box;
+                 /* float:left; */
+                 }
+
+            
+
+         .admin{
+            background-color: white;
+            width: 320px;
+            height: 350px;
+            position: absolute;
+            top: 27%;
+            left: 50%;
+            border: 2px solid black;
+            /* border-left:2px solid #DDB99B; */
+            box-shadow: 5px 5px;
+         }       
+
+                 .admin input[type=email] , input[type=text]{
+                 width: 200px;
+                 padding:12px 20px 12px 4px;
+                 margin:10px;
+                 display: inline-block;
+                 border: 1px solid #ccc;
+                 border-radius: 10px;
+                 box-sizing: border-box;
+                 };
+
+                
+                 div.h2{
+                    text-align: center;
+                 }
+                 .signup{
+                    text-align: center;
+                    text-decoration: no
+                 }
+
+                 .loginbox{
+                    background-color:#DDB99B;
+                    width: 1000px;
+                 }
+
+        .eml{
+         margin-left:20px;
+        }
+        
+        .pwd{
+          margin-left: 20px;
+        }
+
+        .logo{
+    width: 15%;
+    /* display: inline-block; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    position:relative;
+    top: 4%;
+    left: 46%;
+}
+.logo img{
+    width: 50%;
+    border: 3px solid rgb(206, 167, 121);
+    border-radius: 50%;
+
+    }
+
+    .loginbutton{
+     height: 30px;
+     width: 80px;
+     margin-left: 115px;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+      <div class="logo"><img src="./images/logo.png"alt="company logo"></div>
+        <!-- <h1>BMSCE LIBRARY</h1> -->
+      <!-- <h1 style="text-align:center;">Welcome to BMSCE Library</h1> -->
+       <div class="loginbox">
+        <div class="student">
+            <h2 style="text-align:center;">Student Login</h2>
+            <label for="" class="eml">Email</label><br> 
+            <input type="email" placeholder="Enter your Email"><br><br>
+            <label for="" class="pwd">Password</label><br>
+            <input type="text" placeholder="Enter your Password"><br><br>
+            <button class="loginbutton">Login</button>
+            <div class="signup"><br>
+          New user? <a href="" style="text-decoration:none;">Sign up</a></div>
+
+        </div>
+
+        <div class="admin">
+            <h2 style="text-align: center;">Admin Login</h2>
+            <label for="" class="eml">Email</label><br>
+            <input type="email" placeholder="Enter your Email"><br><br>
+            <label for=""class="pwd">Password</label><br>
+            <input type="text" placeholder="Enter your Password"><br><br>
+            <button class="loginbutton">Login</button>
+
+        </div>
+       </div>
+    </div>
+</body>
+</html>
+
+
